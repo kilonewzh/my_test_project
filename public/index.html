@@ -3,80 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>乃希 | 个人空间</title>
-  <link rel="stylesheet" href="/css/main.css">
+ <title>NAIXI · ECO STUMP</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:#06080a;color:#fff;font-family:sans-serif;overflow:hidden}
+    #canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1}
+    .ui{position:fixed;top:30px;left:30px;z-index:10;color:#fff;opacity:0.8}
+    .ui h1{font-size:22px;font-weight:400;margin-bottom:6px}
+    .ui p{font-size:13px;opacity:0.6}
+  </style>
 </head>
 <body>
-
-<!-- 背景粒子 -->
-<div id="particles-bg"></div>
-
-<!-- 3D 树桩画布 -->
-<canvas id="tree-canvas"></canvas>
-
-<!-- 顶部导航 -->
-<nav class="navbar">
-  <div class="logo">NAIXI</div>
-  <ul class="menu">
-    <li><a href="#home">主页</a></li>
-    <li><a href="#about">关于</a></li>
-    <li><a href="#works">作品</a></li>
-    <li><a href="#contact">联系</a></li>
-  </ul>
-</nav>
-
-<!-- 主标题 -->
-<section class="hero" id="home">
-  <div class="hero-inner">
-    <h1 class="title">
-      <span class="light">ECO</span>
-      <span class="glow">SYSTEM</span>
-    </h1>
-    <p class="subtitle">
-      鼠标移动，唤醒树桩的生命与光影
-    </p>
-    <div class="tip">
-      树桩会跟随你的视线生长、发光、流动
-    </div>
+  <div class="ui">
+    <h1>NAIXI · ECO STUMP</h1>
+    <p>移动鼠标 → 粒子追踪 → 唤醒树桩生态</p>
   </div>
-</section>
-
-<!-- 关于 -->
-<section class="section" id="about">
-  <div class="container">
-    <h2 class="section-title">ABOUT</h2>
-    <div class="card">
-      这里是乃希的数字生态空间，融合自然、科技、光影与生命。
-    </div>
-  </div>
-</section>
-
-<!-- 作品 -->
-<section class="section dark" id="works">
-  <div class="container">
-    <h2 class="section-title">WORKS</h2>
-    <div class="grid">
-      <div class="grid-item">汉化作品</div>
-      <div class="grid-item">音乐创作</div>
-      <div class="grid-item">摄影作品</div>
-      <div class="grid-item">咖啡日常</div>
-    </div>
-  </div>
-</section>
-
-<!-- 联系 -->
-<section class="section" id="contact">
-  <div class="container">
-    <h2 class="section-title">CONTACT</h2>
-    <div class="card">
-      邮箱：naixi@example.com<br>
-      微博：@乃希NaiXi
-    </div>
-  </div>
-</section>
-
-<script src="/js/particles.js"></script>
-<script src="/js/tree3d.js"></script>
-<script src="/js/main.js"></script>
+  <canvas id="canvas"></canvas>
+  <script src="/js/main.js"></script>
 </body>
 </html>
